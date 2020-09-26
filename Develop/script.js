@@ -3,7 +3,15 @@ var time = $("#currentDay");
 time.text(date);
 
 var timeblock = $(".container");
-timeblock.append("9");
+timeblock.append("9 AM");
 for (var i = 10; i < 18 ; i++){
-    timeblock.append("<hr\>"+ i);
+    if(i < 13){
+        if (i !=12)
+        timeblock.append("<hr\>"+ i + " AM");
+        else
+        timeblock.append("<hr\>"+ i + " PM")
+    }
+    else{
+        timeblock.append("<hr\>" + (i-12) + " PM");
+    }
 }
