@@ -44,13 +44,18 @@ $(".container").append('
         </div>
         <div class = "col-1">
           <button class = "saveBtn" id ="btnNumber">save</button>
-        </div>'
-      </div>);
+        </div>
+      </div>)';
 ```
 
-**2.  Global Variables**
+**2.  Moment.js**
 
-This website needed a large number of global variables as shown below.
+Moment.js keeps track of the current date and time.
+*The code below shows how to format to display as shown in the website*
+```bash
+moment().format('dddd[,] MMMM Do');
+```
+
 
 ![Image of global var](assets/images/var.png)
 *These variables were declared and written in as neeeded*
