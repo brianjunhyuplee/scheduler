@@ -31,63 +31,92 @@ for (var i = 0; i<allContents.length ; i++){
     }
 }
 //sets the context to the local storage
-for (var i = 0; i<allContents.length ; i++){
-    localStorage;
+if(localStorage.getItem('contents9')===!null){
+    alert("in here");
+    $("#contents9").text(localStorage.getItem('contents9'));
+}
+if(localStorage.getItem('contents10')===!null){
+    $("#contents10").text(localStorage.getItem('contents10'));
+}
+if(localStorage.getItem('contents11')===!null){
+    $("#contents11").text(localStorage.getItem('contents11'));
+}
+if(localStorage.getItem('contents12')===!null){
+    $("#contents12").text(localStorage.getItem('contents12'));
+}
+if(localStorage.getItem('contents13')===!null){
+    $("#contents13").text(localStorage.getItem('contents13'));
+}
+if(localStorage.getItem('contents14')===!null){
+    $("#contents14").text(localStorage.getItem('contents14'));
+}
+if(localStorage.getItem('contents15')===!null){
+    $("#contents15").text(localStorage.getItem('contents15'));
+}
+if(localStorage.getItem('contents16')===!null){
+    $("#contents16").text(localStorage.getItem('contents16'));
+}
+if(localStorage.getItem('contents17')===!null){
+    $("#contents17").text(localStorage.getItem('contents17'));
 }
 
 
+
+
 $("#btn9").on("click", function() {
-    var str = $("#input9").val();
-    localStorage.setItem('contents9',$('#contents9'));
+    var str = JSON.stringify($("#input9").val());
+    console.log(str);
+    localStorage.setItem('contents9',str);
+    console.log(localStorage.getItem('contents9'));
     
     //console.log(localStorage);
   });
 
   $("#btn10").on("click", function() {
-    var str = $("#input10").val();
-    localStorage.setItem('contents10',$('#contents10'));
+    var str = JSON.stringify($("#input10").val());
+    localStorage.setItem('contents10',str);
     //console.log(localStorage);
   });
 
   $("#btn11").on("click", function() {
-    var str = $("#input11").val();
+    var str = JSON.stringify($("#input11").val());
     localStorage.setItem('contents11',str);
     ////console.log(localStorage);
   });
 
   $("#btn12").on("click", function() {
-    var str = $("#input12").val();
+    var str = JSON.stringify($("#input12").val());
     localStorage.setItem('contents12',str);
     ////console.log(localStorage);
   });
 
   $("#btn13").on("click", function() {
-    var str = $("#input13").val();
-    alocalStorage.setItem('contents13',str);
+    var str = JSON.stringify($("#input13").val());
+    localStorage.setItem('contents13',str);
     //console.log(localStorage);
   });
 
   $("#btn14").on("click", function() {
-    var str = $("#input14").val();
-    alocalStorage.setItem('contents14',str);
+    var str = JSON.stringify($("#input14").val());
+    localStorage.setItem('contents14',str);
     //console.log(localStorage);
   });
 
   $("#btn15").on("click", function() {
-    var str = $("#input15").val();
-    alocalStorage.setItem('contents15',str);
+    var str = JSON.stringify($("#input15").val());
+    localStorage.setItem('contents15',str);
     //console.log(localStorage);
   });
 
   $("#btn16").on("click", function() {
-    var str = $("#input16").val();
-    alocalStorage.setItem('contents16',str);
+    var str = JSON.stringify($("#input16").val());
+    localStorage.setItem('contents16',str);
     //console.log(localStorage);
   });
 
   $("#btn17").on("click", function() {
-    var str = $("#input17").val();
-    alocalStorage.setItem('contents17',str);
+    var str = JSON.stringify($("#input17").val());
+    localStorage.setItem('contents17',str);
     //console.log(localStorage);
   });
 console.log(localStorage);
