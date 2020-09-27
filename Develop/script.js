@@ -14,8 +14,10 @@ var container = $(".container");
 // var btn15 = $("#btn15");
 // var btn16 = $("#btn16");
 // var btn17 = $("#btn17");
+
 var allContents = [$("#contents9"),$("#contents10"),$("#contents11"),$("#contents12"),$("#contents13"),$("#contents14"),$("#contents15"),$("#contents16"),$("#contents17")];
-alert(allContents.length);
+
+// colors the contents by time
 for (var i = 0; i<allContents.length ; i++){
     if (time >(i+9)){
         allContents[i].css("background-color","gray");
@@ -29,41 +31,43 @@ for (var i = 0; i<allContents.length ; i++){
     }
 }
 
+
+
 $("#btn9").on("click", function() {
-    alert("I've been clicked!");
+    localStorage.getItem($('#contents9'));
   });
 
   $("#btn10").on("click", function() {
-    alert("I've been clicked!");
+    localStorage.getItem($('#contents10'));
   });
 
   $("#btn11").on("click", function() {
-    alert("I've been clicked!");
+    localStorage.getItem($('#contents11'));
   });
 
   $("#btn12").on("click", function() {
-    alert("I've been clicked!");
+    localStorage.getItem($('#contents12'));
   });
 
   $("#btn13").on("click", function() {
-    alert("I've been clicked!");
+    alocalStorage.getItem($('#contents13'));
   });
 
   $("#btn14").on("click", function() {
-    alert("I've been clicked!");
+    alocalStorage.getItem($('#contents14'));
   });
 
   $("#btn15").on("click", function() {
-    alert("I've been clicked!");
+    alocalStorage.getItem($('#contents15'));
   });
 
   $("#btn16").on("click", function() {
-    alert("I've been clicked!");
+    alocalStorage.getItem($('#contents16'));
   });
 
   $("#btn17").on("click", function() {
-    alert("I've been clicked!");
+    alocalStorage.getItem($('#contents17'));
   });
-
+console.log(localStorage);
 
 });
