@@ -30,43 +30,65 @@ for (var i = 0; i<allContents.length ; i++){
        
     }
 }
-
+//sets the context to the local storage
+for (var i = 0; i<allContents.length ; i++){
+    localStorage;
+}
 
 
 $("#btn9").on("click", function() {
-    localStorage.getItem($('#contents9'));
+    var str = $("#input9").val();
+    localStorage.setItem('contents9',$('#contents9'));
+    
+    //console.log(localStorage);
   });
 
   $("#btn10").on("click", function() {
-    localStorage.getItem($('#contents10'));
+    var str = $("#input10").val();
+    localStorage.setItem('contents10',$('#contents10'));
+    //console.log(localStorage);
   });
 
   $("#btn11").on("click", function() {
-    localStorage.getItem($('#contents11'));
+    var str = $("#input11").val();
+    localStorage.setItem('contents11',str);
+    ////console.log(localStorage);
   });
 
   $("#btn12").on("click", function() {
-    localStorage.getItem($('#contents12'));
+    var str = $("#input12").val();
+    localStorage.setItem('contents12',str);
+    ////console.log(localStorage);
   });
 
   $("#btn13").on("click", function() {
-    alocalStorage.getItem($('#contents13'));
+    var str = $("#input13").val();
+    alocalStorage.setItem('contents13',str);
+    //console.log(localStorage);
   });
 
   $("#btn14").on("click", function() {
-    alocalStorage.getItem($('#contents14'));
+    var str = $("#input14").val();
+    alocalStorage.setItem('contents14',str);
+    //console.log(localStorage);
   });
 
   $("#btn15").on("click", function() {
-    alocalStorage.getItem($('#contents15'));
+    var str = $("#input15").val();
+    alocalStorage.setItem('contents15',str);
+    //console.log(localStorage);
   });
 
   $("#btn16").on("click", function() {
-    alocalStorage.getItem($('#contents16'));
+    var str = $("#input16").val();
+    alocalStorage.setItem('contents16',str);
+    //console.log(localStorage);
   });
 
   $("#btn17").on("click", function() {
-    alocalStorage.getItem($('#contents17'));
+    var str = $("#input17").val();
+    alocalStorage.setItem('contents17',str);
+    //console.log(localStorage);
   });
 console.log(localStorage);
 
