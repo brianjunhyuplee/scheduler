@@ -30,8 +30,8 @@ for (var i = 0; i<allContents.length ; i++){
     }
 }
 //sets the context to the local storage
-console.log(JSON.parse(localStorage.getItem('contents9'))===!null);
-console.log(localStorage.getItem('contents9'));
+//console.log(JSON.parse(localStorage.getItem('contents9'))===!null);
+//console.log(localStorage.getItem('contents9'));
 if(localStorage.getItem('contents9')!==null){
     $("#input9").text(JSON.parse(localStorage.getItem('contents9')));
 }

@@ -55,57 +55,40 @@ Moment.js keeps track of the current date and time.
 ```bash
 moment().format('dddd[,] MMMM Do');
 ```
+![Image of the date](assets/images/time.png)
 
-
-![Image of global var](assets/images/var.png)
-*These variables were declared and written in as neeeded*
-
-**3.  Functions**
-1. Create a Timer
-
-A timer must be created and displayed. 
-The timer will be set to have 60 seconds.
-Every time the user click an incorrect answer, subtract 5 from the timer.
-When the timer reaches zero or below, the quiz will end.
-The timer will begin once the user clicks Begin.
-
-![Image of the timer](assets/images/timer.png)
-
-2. Adding Questions and Answers to the HTML
-
-- Arrays for questions, correct answers, and incorrect answers are initialized.
-
-Every time a button is clicked, the next question will be displayed on the HTML using the below code.
+*The code below shows how to get the current hour*
 ```bash
-$(#tag).text(questionarray[index]);
+moment().hour();
 ```
-
-- After the question is displayed, four answers will be displayed as buttons.
-
-The correct answer will be placed randomly.
-The code below shoes the syntax for changing the text of the button.
-```bash
-$(#button).text(answer[index]);
-```
-*Every time a question is answered correctly, points will be added.*
-
-![Image of questions and answers](assets/images/qa.png)
-
-3. End of Quiz
-
-Once the user has answered all the questions or run out of time, the system will prompt the user for a name.
-The name will be recorded as well as the points into two arrays.
-All the buttons used for the quiz will be hidden using the function hide.
-The user score will be displayed on the screen as well as a list of previous user names and scores.
-Once all values are stored, the point count and index of the question and answer arrays will be set to 0.
-
-![Image of Scoreboard](assets/images/gameOver.png)
-
-4. Try Again
-
-A button labeled Try Again will run the same operations as the Begin button.
+By getting the current hour, the code is able to make a comparison between the current time and the hours on the schedule to change each section's background color.
+- If the current hour is the same hour as the section, the section will be red.
+- If the current hour is passed the hour in the section, the section will be gray.
+- If the current hour has not reached the hour in the section, the section will be green.
 
 
+**3.  Local Storage**
+
+Two main methods were implemented for the local storage.
+1. setItem
+     ```bash
+    $("#btnId").on("click", function() {
+    var str = JSON.stringify($("#textAreaId").val());
+    localStorage.setItem('keyId',str);
+  });
+    ```
+    - Every time the save button is clicked, the string inputted in the text area is saved.
+    - JSON.stringify($("#textAreaId.val()")); turns the inputted value into a string.
+    - that string is then put into the local storage under the keyId name.
+2. getItem
+    ```bash
+    if(localStorage.getItem('keyId')!==null){
+    $("#textAreaId").text(JSON.parse(localStorage.getItem('keyId')));
+    }
+    ```
+    - Every time the page is refreshed, the string in the local storage under the keyId name will be outputted to the corresponding text area.
+    - JSON.parse outputs the actual value into the text area.
+        - If parse is not used, the output will have double quotations around the string.
 
 ## Built With:
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
