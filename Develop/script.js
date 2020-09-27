@@ -27,37 +27,37 @@ for (var i = 0; i<allContents.length ; i++){
     }
     else{
         allContents[i].css("background-color","red");
-       
     }
 }
 //sets the context to the local storage
-if(localStorage.getItem('contents9')===!null){
-    alert("in here");
-    $("#contents9").text(localStorage.getItem('contents9'));
+console.log(JSON.parse(localStorage.getItem('contents9'))===!null);
+console.log(localStorage.getItem('contents9'));
+if(localStorage.getItem('contents9')!==null){
+    $("#input9").text(JSON.parse(localStorage.getItem('contents9')));
 }
-if(localStorage.getItem('contents10')===!null){
-    $("#contents10").text(localStorage.getItem('contents10'));
+if(localStorage.getItem('contents10')!==null){
+    $("#input10").text(JSON.parse(localStorage.getItem('contents10')));
 }
-if(localStorage.getItem('contents11')===!null){
-    $("#contents11").text(localStorage.getItem('contents11'));
+if(localStorage.getItem('contents11')!==null){
+    $("#input11").text(JSON.parse(localStorage.getItem('contents11')));
 }
-if(localStorage.getItem('contents12')===!null){
-    $("#contents12").text(localStorage.getItem('contents12'));
+if(localStorage.getItem('contents12')!==null){
+    $("#input12").text(JSON.parse(localStorage.getItem('contents12')));
 }
-if(localStorage.getItem('contents13')===!null){
-    $("#contents13").text(localStorage.getItem('contents13'));
+if(localStorage.getItem('contents13')!==null){
+    $("#input13").text(JSON.parse(localStorage.getItem('contents13')));
 }
-if(localStorage.getItem('contents14')===!null){
-    $("#contents14").text(localStorage.getItem('contents14'));
+if(localStorage.getItem('contents14')!==null){
+    $("#input14").text(JSON.parse(localStorage.getItem('contents14')));
 }
-if(localStorage.getItem('contents15')===!null){
-    $("#contents15").text(localStorage.getItem('contents15'));
+if(localStorage.getItem('contents15')!==null){
+    $("#input15").text(JSON.parse(localStorage.getItem('contents15')));
 }
-if(localStorage.getItem('contents16')===!null){
-    $("#contents16").text(localStorage.getItem('contents16'));
+if(localStorage.getItem('contents16')!==null){
+    $("#input16").text(JSON.parse(localStorage.getItem('contents16')));
 }
-if(localStorage.getItem('contents17')===!null){
-    $("#contents17").text(localStorage.getItem('contents17'));
+if(localStorage.getItem('contents17')!==null){
+    $("#input17").text(JSON.parse(localStorage.getItem('contents17')));
 }
 
 
@@ -65,11 +65,7 @@ if(localStorage.getItem('contents17')===!null){
 
 $("#btn9").on("click", function() {
     var str = JSON.stringify($("#input9").val());
-    console.log(str);
     localStorage.setItem('contents9',str);
-    console.log(localStorage.getItem('contents9'));
-    
-    //console.log(localStorage);
   });
 
   $("#btn10").on("click", function() {
@@ -86,6 +82,7 @@ $("#btn9").on("click", function() {
 
   $("#btn12").on("click", function() {
     var str = JSON.stringify($("#input12").val());
+    console.log(str);
     localStorage.setItem('contents12',str);
     ////console.log(localStorage);
   });
