@@ -95,9 +95,10 @@ Two main methods were implemented for the local storage.
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JS]([https://developer.mozilla.org/en-US/docs/Web/JavaScript])
 * [jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery)
+* [BootStrap](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Bootstrapped_extensions)
 
 ## Deployed Link:
-* [scheduler](https://brianjunhyuplee.github.io/scheduler/)
+* [Scheduler](https://brianjunhyuplee.github.io/scheduler/)
 
 ## Author(s):
 **Brian Lee**
